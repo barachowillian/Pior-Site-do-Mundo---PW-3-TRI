@@ -7,8 +7,24 @@
   <link rel="stylesheet" href="main.css">
   <script src="main.js" defer></script>
 </head>
-<body>
-  <h1>Bem-vindo à Hamburgueria das Winx</h1>
-  <button onclick="irParaCadastro()">Cadastrar-se</button>
+<body class="pagina-index">
+  <header>
+    <h1> Hamburgueria das Winx </h1>
+    <p class="slogan">Um lugar mágico... e ligeiramente mal feito!</p>
+  </header>
+
+  <section class="conteudo-principal">
+    <button onclick="irParaCadastro()">Entrar na Magia</button>
+    <button onclick="mostrarPopup()">Promoção Misteriosa</button>
+  </section>
+
+  <div id="popup" class="popup escondido">
+    <p>✨ Parabéns! Você ganhou... nada!</p>
+    <button onclick="fecharPopup()">Fechar</button>
+  </div>
+
+  <footer>
+    <p>© 2025 Hamburgueria das Winx — Um desastre encantador</p>
+  </footer>
 </body>
 </html>
