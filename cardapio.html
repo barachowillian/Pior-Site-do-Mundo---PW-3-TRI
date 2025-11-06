@@ -1,11 +1,23 @@
-<div id="cardapioContainer" class="cardapio-fechado">
-    <h2>✨ Cardápio Mágico ✨</h2>
-    <ul>
-      <li>🧚‍♀️ X-Winx — R$ 25,00 (brilha no escuro!)</li>
-      <li>🌈 X-Bloom — R$ 28,00 (com molho encantado)</li>
-      <li>💫 X-Stella — R$ 30,00 (com batata arco-íris)</li>
-      <li>🍔 X-Flora — R$ 27,00 (hambúrguer vegetal mágico)</li>
-      <li>🪩 X-Musa — R$ 29,00 (com cheddar musical)</li>
-    </ul>
-    <button onclick="fecharCardapio()">Fechar</button>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio Winx</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <h1> Cardápio das Winx </h1>
+
+  <button class="botao-minimo" onclick="mostrarCardapio()">Ver Cardápio</button>
+
+  <div id="cardapio" class="invisivel">
+    <p>Bloom Burguer — R$ 29,90</p>
+    <p>Stella Burguer — R$ 27,90</p>
+    <p>Flora Veggie — R$ 25,90</p>
+    <p>Musa Bacon — R$ 31,90</p>
+    <p>Tecna Digital — R$ 28,90</p>
   </div>
+</body>
+</html>
