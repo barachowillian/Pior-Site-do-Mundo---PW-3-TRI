@@ -1,5 +1,5 @@
 
-alert("Bem-vindo(a) à Hamburgueria do Bairro!");
+alert("Bem-vindo(a) à Hamburgueria das Winx!");
 
 function confundir() {
   const mensagens = [
