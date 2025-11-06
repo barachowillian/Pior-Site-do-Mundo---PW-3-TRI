@@ -1,0 +1,92 @@
+body {
+    background-image: url("https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif");
+    background-size: cover;
+    color: #ff69b4;
+    font-family: "Comic Sans MS";
+    text-align: center;
+    margin: 0;
+    overflow-x: scroll;
+  }
+  
+  header {
+    background: linear-gradient(45deg, lime, magenta);
+    border-bottom: 10px dashed yellow;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: cyan;
+    font-size: 50px;
+    transform: rotate(-3deg);
+    text-shadow: 3px 3px 0 black;
+  }
+  
+  nav button {
+    background: linear-gradient(90deg, red, orange);
+    border: 5px solid black;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .card {
+    background: repeating-linear-gradient(45deg, yellow, pink 10px, red 20px);
+    border: 8px double purple;
+    padding: 20px;
+    margin: 20px;
+    transform: skewY(-5deg);
+  }
+  
+  aside {
+    background: black;
+    color: white;
+    border-left: 10px solid cyan;
+    padding: 10px;
+    margin: 20px;
+  }
+  
+  .popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(255, 255, 0, 0.9);
+    border: 3px dotted red;
+    padding: 10px;
+    animation: pisca 0.6s infinite;
+  }
+  
+  @keyframes pisca {
+    50% { opacity: 0; }
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 40px auto;
+    border: 4px groove lime;
+    padding: 30px;
+    background: pink;
+    transform: rotate(1deg);
+  }
+  
+  input {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 3px solid purple;
+  }
+  
+  button {
+    background: red;
+    color: yellow;
+    font-weight: bold;
+    border: 3px solid black;
+  }
+  
+  footer {
+    background: purple;
+    color: yellow;
+    padding: 30px;
+    margin-top: 50px;
+  }
