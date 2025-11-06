@@ -33,3 +33,16 @@ setInterval(() => {
     popup.style.bottom = Math.random() * 150 + "px";
   }
 }, 1000);
+// 💫 Funções do Cardápio Winx
+function abrirCardapio() {
+    const cardapio = document.getElementById("cardapioContainer");
+    cardapio.classList.remove("cardapio-fechado");
+    cardapio.classList.add("cardapio-aberto");
+  }
+  
+  function fecharCardapio() {
+    const cardapio = document.getElementById("cardapioContainer");
+    cardapio.classList.remove("cardapio-aberto");
+    cardapio.classList.add("cardapio-fechado");
+  }
+  
