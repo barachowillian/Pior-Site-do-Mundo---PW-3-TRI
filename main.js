@@ -3,27 +3,26 @@ function irParaCadastro() {
   }
   
   function validarCadastro() {
-    const nome = document.getElementById("nome").value.trim();
-    const email = document.getElementById("email").value.trim();
+    const nome = document.getElementById("nome").value;
+    const email = document.getElementById("email").value;
     const senha = document.getElementById("senha").value;
     const confirmar = document.getElementById("confirmarSenha").value;
   
     if (!nome || !email || !senha || !confirmar) {
-      alert("Por favor, preencha todos os campos antes de prosseguir.");
+      alert("Preencha todos os campos corretamente.");
       return;
     }
   
     if (senha !== confirmar) {
-      alert("As senhas informadas não coincidem. Verifique e tente novamente.");
+      alert("As senhas não correspondem.");
       return;
     }
   
-    alert("Cadastro realizado com sucesso!");
     window.location.href = "cardapio.html";
   }
   
   function mostrarCardapio() {
-    const cardapio = document.getElementById("cardapio");
-    cardapio.classList.remove("invisivel");
+    const c = document.getElementById("cardapio");
+    c.classList.remove("invisivel");
   }
   

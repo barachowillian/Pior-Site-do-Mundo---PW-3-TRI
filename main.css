@@ -1,44 +1,47 @@
 body {
-    background: linear-gradient(to right, #ffd6ff, #240246);
-    color: #660066;
+    background: linear-gradient(45deg, magenta, cyan);
+    color: #ff00ff;
+    font-family: "Comic Sans MS", cursive;
     text-align: center;
-    font-family: 'Comic Sans MS', cursive;
+    transform: rotate(0.7deg);
   }
   
-  h1, h2 {
-    color: #fff;
-    text-shadow: 1px 1px 5px #cc00cc;
+  h1 {
+    font-size: 12px;
+    text-shadow: 1px 1px 2px yellow;
   }
   
   input {
-    background-color: #fff0ff;
-    border: 1px solid #8000ff;
-    border-radius: 3px;
-    padding: 3px;
-    margin: 2px;
-    width: 140px;
-    font-size: 10px;
+    display: block;
+    margin: 2px auto;
+    width: 35px;
+    height: 8px;
+    font-size: 6px;
+    border: 1px dashed #000;
+    background: rgba(255,255,255,0.1);
+    color: #000;
+    transform: rotate(-1deg);
   }
   
-  .botao-minimo {
-    background-color: transparent;
-    border: 0.5px solid #c900c9;
-    color: #fdfdfd;
-    font-size: 9px;
-    padding: 2px 4px;
-    border-radius: 2px;
+  button {
+    background: transparent;
+    border: 0.4px dotted #999;
+    color: #999;
+    font-size: 5px;
+    padding: 1px 3px;
     cursor: pointer;
-    opacity: 0.3;
-    transition: 0.3s;
+    transform: rotate(1deg);
   }
   
-  .botao-minimo:hover {
-    opacity: 0.8;
-    background-color: #ffccff;
-    color: #660066;
+  button:hover {
+    color: #000;
+    background: rgba(255,0,255,0.2);
   }
   
   .invisivel {
-    display: none;
+    opacity: 0.05;
+    font-size: 9px;
+    color: #222;
+    transform: rotate(2deg);
   }
   
