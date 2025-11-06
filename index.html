@@ -3,12 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hamburgueria das Winx</title>
-  <link rel="stylesheet" href="main.css">
-  <script src="main.js" defer></script>
+  <title>Cadastro - Winx</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <h1> Hamburgueria das Winx </h1>
-  <button class="botao-minimo" onclick="irParaCadastro()">Entrar</button>
+  <h1>Cadastro das Fadas</h1>
+  <input type="text" id="nome" placeholder="Nome">
+  <input type="email" id="email" placeholder="E-mail">
+  <input type="password" id="senha" placeholder="Senha">
+  <input type="password" id="confirmarSenha" placeholder="Confirmar Senha">
+  <button onclick="validarCadastro()">Cadastrar</button>
 </body>
 </html>
