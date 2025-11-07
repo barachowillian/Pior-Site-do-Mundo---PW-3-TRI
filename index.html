@@ -3,49 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>💥 HAMBURGUERIA DA WINX 💥</title>
+  <title>Hamburgueria da Winx</title>
   <link rel="stylesheet" href="main.css">
   <script defer src="main.js"></script>
 </head>
 <body>
   <marquee behavior="alternate" scrollamount="20" class="titulo-rolando">
-    🍔✨ BEM-VINDO À HAMBURGUERIA DA WINX ✨🍔
+    BEM-VINDO À HAMBURGUERIA DA WINX
   </marquee>
 
   <h1 id="titulo">HAMBURGUERIA DA WINX</h1>
-  <p id="slogan">ONDE O SABOR E O SOFRIMENTO SE ENCONTRAM </p>
+  <p id="slogan">ONDE O SABOR E O SOFRIMENTO SE ENCONTRAM</p>
 
-  <blink><h2 class="promo">🔥 PROMOÇÃO DE HOJE: PAGA 3 E LEVA 1 🔥</h2></blink>
+  <h2 class="promo">PROMOÇÃO DO DIA: CLIQUE NO SEU COMBO E ARREPENDA-SE</h2>
 
   <div class="menu">
-    <h3>Cardápio (ou algo parecido)</h3>
-    <ul>
-      <li>🍔 Combo Bloom - R$ 39,99 (vem com glitter comestível?)</li>
-      <li>🍟 Combo Stella - R$ 29,99 (batata rosa choque)</li>
-      <li>🥤 Combo Musa - R$ 19,99 (milkshake azul neon)</li>
-      <li>🌭 Combo Flora - R$ 24,99 (pão verde, porque sim)</li>
-      <li>🍕 Combo Tecna - R$ 33,33 (gosto de Wi-Fi e LED)</li>
-    </ul>
-  </div>
+    <h3>Escolha seu combo de arrependimento</h3>
 
-  <div class="botoes">
-    <button onclick="mostrarPopup()">CLIQUE AQUI AGORA!!!</button>
-    <button onclick="mudarCores()">NÃO CLIQUE AQUI 😱</button>
-    <a href="cadastro.html"><button id="cadastro">QUERO ME CADASTRAR 😍</button></a>
+    <div class="combos">
+      <button onclick="location.href='combo-bloom.html'">Combo Bloom</button>
+      <button onclick="location.href='combo-stella.html'">Combo Stella</button>
+      <button onclick="location.href='combo-musa.html'">Combo Musa</button>
+      <button onclick="location.href='combo-flora.html'">Combo Flora</button>
+      <button onclick="location.href='combo-tecna.html'">Combo Tecna</button>
+    </div>
   </div>
 
   <footer>
     <marquee scrollamount="15" direction="right">
-      © 2025 Hamburgueria da Winx | Feita com amor e dor de cabeça 💖
+      © 2025 Hamburgueria da Winx | Feita com amor e dor de barriga
     </marquee>
   </footer>
-
-  <div id="popup" class="popup">
-    <div class="popup-conteudo">
-      <h2>🎉 SURPRESA 🎉</h2>
-      <p>Você ganhou nada! Mas obrigada por clicar 💋</p>
-      <button onclick="fecharPopup()">OK 😭</button>
-    </div>
-  </div>
 </body>
 </html>
