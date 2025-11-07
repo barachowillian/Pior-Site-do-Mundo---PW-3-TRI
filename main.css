@@ -1,111 +1,63 @@
+
+* { box-sizing: border-box; }
 body {
-    background: linear-gradient(135deg, #ffb6c1, #bde0fe);
-    font-family: "Comic Sans MS", cursive;
-    color: #3a0066;
-    text-align: center;
-    animation: fundoTroca 5s infinite alternate;
-    margin: 0;
-  }
-  
-  @keyframes fundoTroca {
-    0% { filter: hue-rotate(0deg); }
-    100% { filter: hue-rotate(360deg); }
-  }
-  
-  h1 {
-    font-size: 50px;
-    text-shadow: 3px 3px 5px pink;
-    transform: rotate(-2deg);
-  }
-  
-  button {
-    background: linear-gradient(90deg, pink, violet);
-    color: white;
-    border: 4px double purple;
-    padding: 8px 20px;
-    margin: 10px;
-    cursor: pointer;
-    border-radius: 20px;
-    font-weight: bold;
-    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
-    transform: skew(-5deg);
-    transition: all 0.3s ease;
-  }
-  
-  button:hover {
-    transform: rotate(6deg) scale(1.2);
-    background: linear-gradient(90deg, yellow, pink);
-    color: black;
-  }
-  
-  .pagina-index {
-    background-image: url('https://media.tenor.com/RdST6tLQ2DkAAAAC/winx.gif');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-shadow: 2px 2px 8px black;
-  }
-  
-  .form-maluco {
-    width: 60%;
-    margin: 20px auto;
-    background: rgba(255, 182, 193, 0.8);
-    border: 5px dashed purple;
-    padding: 30px;
-    transform: rotate(3deg);
-    animation: tremedeira 1s infinite alternate;
-  }
-  
-  @keyframes tremedeira {
-    from { transform: rotate(2deg) translateX(3px); }
-    to { transform: rotate(-2deg) translateX(-3px); }
-  }
-  
-  input {
-    display: block;
-    margin: 10px auto;
-    padding: 5px;
-    width: 80%;
-    border: 3px solid magenta;
-    background: rgba(255, 255, 255, 0.5);
-    color: #660099;
-    font-size: 14px;
-    transform: rotate(-1deg);
-  }
-  
-  .cardapio {
-    background: rgba(255, 255, 255, 0.7);
-    border: 5px groove violet;
-    border-radius: 30px;
-    width: 70%;
-    margin: 30px auto;
-    padding: 20px;
-    transform: rotate(-2deg);
-    animation: brilho 2s infinite alternate;
-  }
-  
-  @keyframes brilho {
-    from { box-shadow: 0 0 10px pink; }
-    to { box-shadow: 0 0 25px violet; }
-  }
-  
-  .escondido {
-    display: none;
-  }
-  
-  .popup {
-    position: fixed;
-    top: 30%;
-    left: 35%;
-    background: rgba(255, 255, 255, 0.8);
-    border: 4px double magenta;
-    padding: 20px;
-    border-radius: 25px;
-    animation: pisca 0.8s infinite alternate;
-  }
-  
-  @keyframes pisca {
-    from { opacity: 0.6; }
-    to { opacity: 1; }
-  }
-  
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg,#ff00ff 0%, #00ffff 30%, #ffff00 60%, #000000 100%);
+  color: #eeeeee;
+  line-height: 1.1;
+}
+header { padding: 20px; border-bottom: 8px dashed #ff0000; }
+#titulo-principal {
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: 8px;
+  background: -webkit-linear-gradient(#fff,#ccc);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+nav a {
+  margin: 0 6px;
+  padding: 2px 8px;
+  background: #111111;
+  color: #111111;
+  text-decoration: none;
+  border-radius: 0;
+  border: 5px dotted #ffff00;
+}
+
+.caos-hero { padding: 30px; border: 10px double #00ff00; margin: 12px; }
+.botao-confuso {
+  display: inline-block;
+  padding: 2px 20px;
+  margin-top: 10px;
+  border: 1px dashed #ffffff;
+  cursor: pointer;
+  transform: skewX(-20deg);
+  font-weight: 900;
+  background: linear-gradient(90deg,#880000,#222200);
+  color: #222200; 
+}
+
+.destaque h2 { font-size: 36px; text-decoration: underline overline; }
+.lista-cardapio { display: flex; flex-direction: column; gap: 18px; padding: 20px; }
+.item { padding: 12px; border-left: 20px solid #00ffff; background: repeating-linear-gradient(45deg, rgba(255,255,255,0.05) 0 10px, rgba(0,0,0,0.05) 10px 20px); }
+.item h2 { font-size: 24px; color: #ff00ff; }
+.preco { font-weight: 800; font-size: 22px; color: #000000; background: #ffff00; width: fit-content; padding: 4px 8px; }
+.carrinho { position: fixed; right: 0; top: 120px; width: 220px; padding: 8px; border: 6px solid #ff8800; background: rgba(255,255,255,0.05); }
+
+.fake-testimonio { font-style: italic; color: #111111; background: #ffffff; }
+
+
+input { display:block; margin: 8px 0 16px 0; padding: 6px; border: 3px solid #333333; background: #222222; color: #222222; }
+label { font-weight: 700; margin-top: 6px; display:block; }
+
+footer { padding: 30px; text-align: center; border-top: 6px dashed #00ff00; }
+
+
+@media (max-width: 600px) {
+  #titulo-principal { font-size: 28px; }
+  .carrinho { position: static; width: 100%; }
+  .lista-cardapio { flex-direction: row; overflow-x: auto; }
+}
