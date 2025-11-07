@@ -1,21 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cardápio das Winx</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cardápio - Hamburgueria da Winx</title>
   <link rel="stylesheet" href="main.css">
-  <script src="main.js" defer></script>
 </head>
 <body>
-  <h1>Cardápio das Winx</h1>
-  <div id="cardapio" class="invisivel">
-    <p>Bloom Burguer — R$ 56,90</p>
-    <p>Stella Burguer — R$ 34,90</p>
-    <p>Flora Veggie — R$ 15,90</p>
-    <p>Musa Bacon — R$ 88,90</p>
-    <p>Tecna Digital — R$ 78,90</p>
-  </div>
-  <button onclick="mostrarCardapio()">Ver Cardápio</button>
+  <header>
+    <h1>Cardápio CAÓTICO</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="cardapio.html">Cardápio</a> |
+      <a href="cadastro.html">Cadastro</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="lista-cardapio">
+      <article class="item">
+        <h2>Hamburguer Classicão</h2>
+        <p class="descricao">Carne, queijo, sal, choro.</p>
+        <div class="preco">R$ 1000</div>
+        <div class="botao-confuso" onclick="adicionar(1)">Adicionar</div>
+      </article>
+
+      <article class="item">
+        <h2>Queen Winx (muito rosa)</h2>
+        <p class="descricao">Muitas coisas que não combinam.</p>
+        <div class="preco">R$ 50</div>
+        <div class="botao-confuso" onclick="adicionar(2)">Adicionar</div>
+      </article>
+
+      <article class="item">
+        <h2>Fritas de Papel</h2>
+        <p class="descricao">Cro-crunch (não é crocante)</p>
+        <div class="preco">R$ 0,01</div>
+        <div class="botao-confuso" onclick="adicionar(3)">Adicionar</div>
+      </article>
+    </section>
+
+    <aside class="carrinho">
+      <h3>Carrinho (sem aria, opa)</h3>
+      <ul id="carrinho-lista"></ul>
+      <div class="botao-confuso" onclick="finalizar()">Finalizar</div>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Volte sempre! (ou não)</p>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
