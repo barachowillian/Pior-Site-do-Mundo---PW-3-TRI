@@ -1,63 +1,128 @@
-
-* { box-sizing: border-box; }
 body {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(120deg,#ff00ff 0%, #00ffff 30%, #ffff00 60%, #000000 100%);
-  color: #eeeeee;
-  line-height: 1.1;
-}
-header { padding: 20px; border-bottom: 8px dashed #ff0000; }
-#titulo-principal {
-  font-size: 48px;
+  background: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00, #ff0000);
+  background-size: 400% 400%;
+  animation: mudarFundo 4s infinite;
+  color: #000;
+  font-family: "Comic Sans MS", "Papyrus", cursive;
   text-align: center;
-  letter-spacing: 8px;
-  background: -webkit-linear-gradient(#fff,#ccc);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-nav a {
-  margin: 0 6px;
-  padding: 2px 8px;
-  background: #111111;
-  color: #111111;
-  text-decoration: none;
-  border-radius: 0;
-  border: 5px dotted #ffff00;
+  margin: 0;
+  overflow-x: hidden;
 }
 
-.caos-hero { padding: 30px; border: 10px double #00ff00; margin: 12px; }
-.botao-confuso {
+@keyframes mudarFundo {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+#titulo {
+  font-size: 60px;
+  color: #00ff00;
+  text-shadow: 4px 4px #ff0000, -3px -3px #00ffff;
+  animation: girar 3s infinite linear;
+}
+
+@keyframes girar {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+#slogan {
+  font-size: 24px;
+  background: yellow;
+  color: red;
+  font-weight: bold;
+  border: 5px dashed blue;
+  margin: 10px;
+}
+
+.promo {
+  color: #ff00ff;
+  background: #00ff00;
+  font-size: 30px;
+  padding: 10px;
+  animation: piscar 0.3s infinite alternate;
+}
+
+@keyframes piscar {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.menu {
+  background: repeating-linear-gradient(45deg, #ff00ff, #ff00ff 10px, #00ffff 10px, #00ffff 20px);
+  border: 8px groove yellow;
   display: inline-block;
-  padding: 2px 20px;
-  margin-top: 10px;
-  border: 1px dashed #ffffff;
-  cursor: pointer;
-  transform: skewX(-20deg);
-  font-weight: 900;
-  background: linear-gradient(90deg,#880000,#222200);
-  color: #222200; 
+  padding: 20px;
+  margin: 20px;
+  transform: rotate(3deg);
+  width: 80%;
 }
 
-.destaque h2 { font-size: 36px; text-decoration: underline overline; }
-.lista-cardapio { display: flex; flex-direction: column; gap: 18px; padding: 20px; }
-.item { padding: 12px; border-left: 20px solid #00ffff; background: repeating-linear-gradient(45deg, rgba(255,255,255,0.05) 0 10px, rgba(0,0,0,0.05) 10px 20px); }
-.item h2 { font-size: 24px; color: #ff00ff; }
-.preco { font-weight: 800; font-size: 22px; color: #000000; background: #ffff00; width: fit-content; padding: 4px 8px; }
-.carrinho { position: fixed; right: 0; top: 120px; width: 220px; padding: 8px; border: 6px solid #ff8800; background: rgba(255,255,255,0.05); }
+.menu li {
+  list-style: square;
+  color: #000;
+  font-size: 22px;
+  background: rgba(255,255,255,0.6);
+  margin: 8px;
+  padding: 5px;
+}
 
-.fake-testimonio { font-style: italic; color: #111111; background: #ffffff; }
+button {
+  font-size: 18px;
+  font-weight: bold;
+  border: 5px double #000;
+  border-radius: 20px;
+  padding: 15px;
+  background: linear-gradient(90deg, #ff0000, #00ff00, #0000ff);
+  color: yellow;
+  cursor: pointer;
+  animation: tremer 0.2s infinite;
+  margin: 15px;
+}
 
+@keyframes tremer {
+  0%, 100% {transform: rotate(-3deg);}
+  50% {transform: rotate(3deg);}
+}
 
-input { display:block; margin: 8px 0 16px 0; padding: 6px; border: 3px solid #333333; background: #222222; color: #222222; }
-label { font-weight: 700; margin-top: 6px; display:block; }
+button:hover {
+  transform: scale(1.5) rotate(10deg);
+  background: linear-gradient(90deg, #ff00ff, #ffff00);
+}
 
-footer { padding: 30px; text-align: center; border-top: 6px dashed #00ff00; }
+#cadastro {
+  background: #ff00ff;
+  color: cyan;
+  border: 5px dashed lime;
+  font-size: 20px;
+}
 
+footer {
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  border-top: 10px dotted hotpink;
+}
 
-@media (max-width: 600px) {
-  #titulo-principal { font-size: 28px; }
-  .carrinho { position: static; width: 100%; }
-  .lista-cardapio { flex-direction: row; overflow-x: auto; }
+/* POPUP */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(255,0,255,0.8);
+  justify-content: center;
+  align-items: center;
+  animation: piscar 0.5s infinite;
+}
+
+.popup-conteudo {
+  background: linear-gradient(90deg, #00ffff, #ff00ff);
+  border: 10px ridge yellow;
+  padding: 30px;
+  width: 60%;
+  border-radius: 40px;
+  animation: girar 2s infinite linear;
 }

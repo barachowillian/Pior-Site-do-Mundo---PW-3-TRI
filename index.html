@@ -1,47 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Hamburgueria da Winx - Index</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💥 HAMBURGUERIA DA WINX 💥</title>
   <link rel="stylesheet" href="main.css">
+  <script defer src="main.js"></script>
 </head>
 <body>
-  <header>
-    <h1 id="titulo-principal">HAMBURGUERIA DA WINX!!!</h1>
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="cardapio.html">Cardápio</a>
-      <a href="cadastro.html">Cadastro</a>
-    </nav>
-  </header>
+  <marquee behavior="alternate" scrollamount="20" class="titulo-rolando">
+    🍔✨ BEM-VINDO À HAMBURGUERIA DA WINX ✨🍔
+  </marquee>
 
-  <main>
-    <section class="caos-hero">
-      <p>Bem vindo(a) ao melhor PIOOOR site de hamburguer de bairro. Sinta-se confuso, desorientado e com fome.</p>
-      <div class="botao-confuso" onclick="abrirCardapio()">Clique aqui (ou não)</div>
-    </section>
+  <h1 id="titulo">HAMBURGUERIA DA WINX</h1>
+  <p id="slogan">ONDE O SABOR E O SOFRIMENTO SE ENCONTRAM </p>
 
-    <section class="destaque">
-      <h2>Promoção (ou não)</h2>
-      <ul>
-        <li>Hamburguer do dia - R$9999,99</li>
-        <li>Fritas que parecem papel - grátis</li>
-        <li>Bebida misteriosa - R$0,00</li>
-      </ul>
-    </section>
+  <blink><h2 class="promo">🔥 PROMOÇÃO DE HOJE: PAGA 3 E LEVA 1 🔥</h2></blink>
 
-    <section>
-      <h3>Comentários dos clientes</h3>
-      <p class="fake-testimonio">"Nunca senti tanto sofrimento em forma de site" - <em>Anon</em></p>
-    </section>
-  </main>
+  <div class="menu">
+    <h3>Cardápio (ou algo parecido)</h3>
+    <ul>
+      <li>🍔 Combo Bloom - R$ 39,99 (vem com glitter comestível?)</li>
+      <li>🍟 Combo Stella - R$ 29,99 (batata rosa choque)</li>
+      <li>🥤 Combo Musa - R$ 19,99 (milkshake azul neon)</li>
+      <li>🌭 Combo Flora - R$ 24,99 (pão verde, porque sim)</li>
+      <li>🍕 Combo Tecna - R$ 33,33 (gosto de Wi-Fi e LED)</li>
+    </ul>
+  </div>
+
+  <div class="botoes">
+    <button onclick="mostrarPopup()">CLIQUE AQUI AGORA!!!</button>
+    <button onclick="mudarCores()">NÃO CLIQUE AQUI 😱</button>
+    <a href="cadastro.html"><button id="cadastro">QUERO ME CADASTRAR 😍</button></a>
+  </div>
 
   <footer>
-    <p>Rua Imaginária, 123 - Bairro Do Caos</p>
-    <p>Telefone: (43) 97400-1596</p>
+    <marquee scrollamount="15" direction="right">
+      © 2025 Hamburgueria da Winx | Feita com amor e dor de cabeça 💖
+    </marquee>
   </footer>
 
-  <script src="main.js"></script>
+  <div id="popup" class="popup">
+    <div class="popup-conteudo">
+      <h2>🎉 SURPRESA 🎉</h2>
+      <p>Você ganhou nada! Mas obrigada por clicar 💋</p>
+      <button onclick="fecharPopup()">OK 😭</button>
+    </div>
+  </div>
 </body>
 </html>
