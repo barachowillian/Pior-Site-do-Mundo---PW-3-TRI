@@ -1,79 +1,90 @@
 body {
-  background-color: #ff66ff;
+  background-image: url("img/4171562e9374a978ea4008aba68e05c5.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: lime;
   font-family: "Comic Sans MS", cursive;
   text-align: center;
   margin: 0;
-  overflow-x: hidden;
 }
 
 header {
-  background: linear-gradient(to right, yellow, cyan, pink, lime);
+  background: repeating-linear-gradient(45deg, red, yellow 10px, blue 20px);
   padding: 40px;
-  border-bottom: 10px dotted red;
+  border-bottom: 10px dashed lime;
 }
 
 #titulo-principal {
-  font-size: 60px;
-  letter-spacing: 10px;
-  text-shadow: 5px 5px 5px black;
+  font-size: 65px;
+  color: white;
+  text-shadow: 5px 5px 0px magenta;
+  animation: treme 0.1s infinite;
 }
 
 #slogan {
-  font-size: 20px;
-  background: orange;
-  color: blue;
-  border: 3px solid green;
+  font-size: 18px;
+  color: yellow;
+  background: magenta;
+  border: 5px solid cyan;
   display: inline-block;
-  padding: 10px;
+  padding: 5px;
+  transform: rotate(-7deg);
 }
 
 #combos {
-  margin-top: 50px;
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 15px;
 }
 
 button {
-  background-color: yellow;
-  color: red;
-  font-size: 25px;
-  border: 6px double purple;
-  padding: 20px 40px;
+  background-color: red;
+  color: cyan;
+  font-size: 14px;
+  border: 4px groove yellow;
+  padding: 10px 15px;
   cursor: pointer;
-  transform: rotate(-5deg);
-  transition: 0.2s;
+  transform: rotate(5deg);
 }
 
 button:hover {
-  transform: rotate(10deg) scale(1.2);
+  transform: rotate(-15deg) scale(1.4);
   background-color: lime;
+  color: blue;
 }
 
 footer {
-  background: purple;
+  background: black;
   color: white;
-  padding: 20px;
-  margin-top: 100px;
-  border-top: 5px dashed black;
+  padding: 10px;
+  margin-top: 50px;
+  border-top: 8px dotted red;
 }
 
 .descricao {
-  font-size: 22px;
-  color: hotpink;
-  background: lime;
+  background: yellow;
+  color: red;
+  font-size: 18px;
+  border: 4px dashed purple;
   padding: 10px;
-  margin: 30px;
-  border: 5px dotted yellow;
-  transform: rotate(1deg);
-  animation: pisca 1s infinite alternate;
+  margin: 20px;
+  animation: pisca 0.7s infinite alternate;
 }
 
 @keyframes pisca {
   from { opacity: 1; }
-  to { opacity: 0.6; color: red; }
+  to { opacity: 0.4; color: lime; background: blue; }
+}
+
+@keyframes treme {
+  0% { transform: translate(0px, 0px); }
+  25% { transform: translate(3px, 3px); }
+  50% { transform: translate(-3px, -3px); }
+  75% { transform: translate(2px, -2px); }
+  100% { transform: translate(0px, 0px); }
 }
 
 .botao-voltar {
@@ -83,9 +94,8 @@ footer {
   background-color: transparent;
   border: none;
   color: white;
-  font-size: 14px;
+  font-size: 10px;
   cursor: pointer;
-  transform: rotate(-10deg);
 }
 
 .botao-voltar:hover {
