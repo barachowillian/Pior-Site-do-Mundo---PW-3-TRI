@@ -1,47 +1,111 @@
 body {
-    background: linear-gradient(45deg, magenta, cyan);
-    color: #ff00ff;
+    background: linear-gradient(135deg, #ffb6c1, #bde0fe);
     font-family: "Comic Sans MS", cursive;
+    color: #3a0066;
     text-align: center;
-    transform: rotate(0.7deg);
+    animation: fundoTroca 5s infinite alternate;
+    margin: 0;
+  }
+  
+  @keyframes fundoTroca {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
   }
   
   h1 {
-    font-size: 12px;
-    text-shadow: 1px 1px 2px yellow;
+    font-size: 50px;
+    text-shadow: 3px 3px 5px pink;
+    transform: rotate(-2deg);
+  }
+  
+  button {
+    background: linear-gradient(90deg, pink, violet);
+    color: white;
+    border: 4px double purple;
+    padding: 8px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+    transform: skew(-5deg);
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    transform: rotate(6deg) scale(1.2);
+    background: linear-gradient(90deg, yellow, pink);
+    color: black;
+  }
+  
+  .pagina-index {
+    background-image: url('https://media.tenor.com/RdST6tLQ2DkAAAAC/winx.gif');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+  }
+  
+  .form-maluco {
+    width: 60%;
+    margin: 20px auto;
+    background: rgba(255, 182, 193, 0.8);
+    border: 5px dashed purple;
+    padding: 30px;
+    transform: rotate(3deg);
+    animation: tremedeira 1s infinite alternate;
+  }
+  
+  @keyframes tremedeira {
+    from { transform: rotate(2deg) translateX(3px); }
+    to { transform: rotate(-2deg) translateX(-3px); }
   }
   
   input {
     display: block;
-    margin: 2px auto;
-    width: 35px;
-    height: 8px;
-    font-size: 6px;
-    border: 1px dashed #000;
-    background: rgba(255,255,255,0.1);
-    color: #000;
+    margin: 10px auto;
+    padding: 5px;
+    width: 80%;
+    border: 3px solid magenta;
+    background: rgba(255, 255, 255, 0.5);
+    color: #660099;
+    font-size: 14px;
     transform: rotate(-1deg);
   }
   
-  button {
-    background: transparent;
-    border: 0.4px dotted #999;
-    color: #999;
-    font-size: 5px;
-    padding: 1px 3px;
-    cursor: pointer;
-    transform: rotate(1deg);
+  .cardapio {
+    background: rgba(255, 255, 255, 0.7);
+    border: 5px groove violet;
+    border-radius: 30px;
+    width: 70%;
+    margin: 30px auto;
+    padding: 20px;
+    transform: rotate(-2deg);
+    animation: brilho 2s infinite alternate;
   }
   
-  button:hover {
-    color: #000;
-    background: rgba(255,0,255,0.2);
+  @keyframes brilho {
+    from { box-shadow: 0 0 10px pink; }
+    to { box-shadow: 0 0 25px violet; }
   }
   
-  .invisivel {
-    opacity: 0.05;
-    font-size: 9px;
-    color: #222;
-    transform: rotate(2deg);
+  .escondido {
+    display: none;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 30%;
+    left: 35%;
+    background: rgba(255, 255, 255, 0.8);
+    border: 4px double magenta;
+    padding: 20px;
+    border-radius: 25px;
+    animation: pisca 0.8s infinite alternate;
+  }
+  
+  @keyframes pisca {
+    from { opacity: 0.6; }
+    to { opacity: 1; }
   }
   
