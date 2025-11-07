@@ -1,12 +1,12 @@
-// Cursor de varinha das Winx
+
 document.body.style.cursor = "url('https://cur.cursors-4u.net/cursors/cur-2/cur116.cur'), auto";
 
-// Mensagem inicial para assustar o visitante
+
 setTimeout(() => {
   alert("Bem-vindo à Hamburgueria da Winx! Prepare-se para uma experiência inesquecivelmente questionável!");
 }, 2000);
 
-// Pop-ups aleatórios aparecendo na tela
+
 setInterval(() => {
   const mensagens = [
     "Promoção relâmpago: coma 3 e ganhe um exame médico!",
@@ -35,7 +35,7 @@ setInterval(() => {
   setTimeout(() => caixa.remove(), 4000);
 }, 6000);
 
-// Efeitos sonoros ao passar o mouse nos botões
+
 const botoes = document.querySelectorAll("button");
 botoes.forEach(botao => {
   botao.addEventListener("mouseenter", () => {
@@ -47,7 +47,7 @@ botoes.forEach(botao => {
   });
 });
 
-// Efeito de rastro colorido ao mover o mouse
+
 document.body.addEventListener("mousemove", (e) => {
   const span = document.createElement("span");
   span.textContent = "★";
@@ -61,7 +61,7 @@ document.body.addEventListener("mousemove", (e) => {
   setTimeout(() => span.remove(), 700);
 });
 
-// Fundo piscando em cores diferentes
+
 setInterval(() => {
   document.body.style.filter = `hue-rotate(${Math.random() * 360}deg)`;
 }, 1500);
