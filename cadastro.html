@@ -1,27 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadastro Winx</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cadastro - Hamburgueria da Winx</title>
   <link rel="stylesheet" href="main.css">
-  <script src="main.js" defer></script>
 </head>
-<body class="pagina-cadastro">
-  <h1>Cadastre-se na Magia</h1>
-  <form id="cadastroForm" class="form-maluco">
-    <label>Nome:</label>
-    <input type="text" id="nome">
-    <label>Email:</label>
-    <input type="email" id="email">
-    <label>Senha:</label>
-    <input type="password" id="senha">
-    <label>Confirmar Senha:</label>
-    <input type="password" id="confirmarSenha">
+<body>
+  <header>
+    <h1>Cadastre-se (se quiser)</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cardapio.html">Cardápio</a>
+    </nav>
+  </header>
 
-    <button type="button" onclick="validarCadastro()">Cadastrar</button>
-  </form>
+  <main>
+    <form id="form-cadastro" onsubmit="return enviarCadastro()">
+      <label>Nome:</label>
+      <input type="text" id="nome" placeholder="Seu nome aqui">
 
-  <a href="index.html" class="voltar">Voltar</a>
+      <label>Email (ou nada):</label>
+      <input type="email" id="email" placeholder="a@b.c">
+
+      <label>Telefone:</label>
+      <input type="tel" id="telefone" placeholder="(00)00000-0000">
+
+      <div class="botao-confuso" onclick="document.getElementById('form-cadastro').submit();">Enviar</div>
+    </form>
+
+    <p class="obs">Observação: formulário não tem validação acessível, desculpa aí.</p>
+  </main>
+
+  <footer>
+    <p>Não guardamos nada (mentira)</p>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
