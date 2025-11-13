@@ -14,6 +14,56 @@ O site é composto pelos seguintes arquivos:
 
 - **index.html** — Página inicial com o título principal, imagem de fundo e botões de navegação.  
 ![Código do Index:](img/Indeximagem.png)
+O arquivo index.html é a página principal do site Hamburgueria da Winx.
+Ele começa com a declaração <!DOCTYPE html> e define o idioma da página como português do Brasil (lang="pt-BR").
+
+No <head>, estão incluídos:
+
+As meta tags de codificação (UTF-8) e de responsividade (viewport);
+
+O título da página: “Hamburgueria da Winx”;
+
+O link de referência para o arquivo de estilo main.css;
+
+O script main.js, que é carregado de forma assíncrona com o atributo defer.
+
+No <body>, há três seções principais:
+
+1. <header>
+
+Contém:
+
+O título principal (<h1 id="titulo-principal">HAMBURGUERIA DA WINX</h1>);
+
+Um slogan (<p id="slogan">Beleza, brilho e conforto visual!!!</p>);
+
+Dois parágrafos adicionais com mensagens temáticas sobre a hamburgueria.
+
+2. <main>
+
+Inclui:
+
+Um subtítulo (<h2>Escolha seu Combo Especial</h2>);
+
+Uma <div id="combos"> com cinco botões, cada um levando a uma página diferente:
+
+combo-bloom.html → Combo Bloom
+
+combo-flora.html → Combo Flora
+
+combo-stella.html → Combo Stella
+
+combo-musa.html → Combo Musa
+
+combo-tecna.html → Combo Tecna
+
+Cada botão usa o atributo onclick com window.location.href para redirecionar o usuário à página correspondente.
+
+3. <footer>
+
+Contém uma frase humorística:
+
+“Hamburgueria da Winx - Não nos responsabilizamos por efeitos colaterais.”
 - **combo.html** — Página onde mostra a descrição do lanche de forma detalhada.
 - **main.css** — Arquivo de estilização com cores fortes, fontes grandes e elementos propositalmente desorganizados.  
 - **main.js** — Arquivo JavaScript responsável pelas interações e mensagens de alerta.
