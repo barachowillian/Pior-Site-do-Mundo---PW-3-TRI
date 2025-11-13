@@ -168,3 +168,15 @@ button:hover {
   color: darkmagenta;
   text-decoration: none;
 }
+
+/* 🎀 Ajuste final: botões de opções de lanche menores */
+#combos button {
+  font-size: 10px;      /* texto menor */
+  padding: 5px 8px;     /* botão mais compacto */
+  border-width: 3px;    /* borda mais fina */
+  transform: rotate(3deg);
+}
+
+#combos button:hover {
+  transform: rotate(-10deg) scale(1.2);
+}
