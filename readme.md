@@ -12,7 +12,7 @@ O tema escolhido foi inspirado no universo das fadas Winx, utilizando cores vibr
 ## Estrutura do projeto  
 O site é composto pelos seguintes arquivos:
 
-- **index.html** — Página inicial com o título principal, imagem de fundo e botões de navegação.  
+- **index.html** — Página inicial com o título principal, imagem de fundo e botões de navegação. <br>
 ![Código do Index:](img/Indeximagem.png)
 O arquivo index.html é a página principal do site Hamburgueria da Winx.
 Ele começa com a declaração <!DOCTYPE html> e define o idioma da página como português do Brasil (lang="pt-BR").
