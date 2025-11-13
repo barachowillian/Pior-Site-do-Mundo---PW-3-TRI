@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedido - Hamburgueria da Winx</title>
+  <link rel="stylesheet" href="pedido.css">
+</head>
+<body>
+  <h1>Faça seu pedido na Hamburgueria da Winx</h1>
+
+  <label>Seu nome:</label>
+  <input type="text" id="nome" placeholder="Digite seu nome">
+
+  <br>
+
+  <label>Escolha o combo:</label>
+  <select id="combo">
+    <option value="Bloom Burguer">Bloom Burguer</option>
+    <option value="Stella Chicken">Stella Chicken</option>
+    <option value="Flora Veggie">Flora Veggie</option>
+    <option value="Musa Bacon">Musa Bacon</option>
+    <option value="Tecna Mega Combo">Tecna Mega Combo</option>
+  </select>
+
+  <br>
+
+  <label>Bebida:</label>
+  <select id="bebida">
+    <option value="Refrigerante">Refrigerante</option>
+    <option value="Suco Mágico">Suco Mágico</option>
+    <option value="Água com Glitter">Água com Glitter</option>
+  </select>
+
+  <br>
+
+  <button id="fazerPedido">Fazer Pedido</button>
+
+  <div id="resumo"></div>
+
+  <script src="pedido.js"></script>
+</body>
+</html>
