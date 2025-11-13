@@ -18,16 +18,25 @@
   <main>
     <h2>Escolha seu Combo Especial</h2>
     <div id="combos">
-      <button onclick="window.location.href='combo-bloom.html'">Combo Bloom</button>
-      <button onclick="window.location.href='combo-flora.html'">Combo Flora</button>
-      <button onclick="window.location.href='combo-stella.html'">Combo Stella</button>
-      <button onclick="window.location.href='combo-musa.html'">Combo Musa</button>
-      <button onclick="window.location.href='combo-tecna.html'">Combo Tecna</button>
+      <button onclick="fazerPedido('Combo Bloom')">Combo Bloom</button>
+      <button onclick="fazerPedido('Combo Flora')">Combo Flora</button>
+      <button onclick="fazerPedido('Combo Stella')">Combo Stella</button>
+      <button onclick="fazerPedido('Combo Musa')">Combo Musa</button>
+      <button onclick="fazerPedido('Combo Tecna')">Combo Tecna</button>
     </div>
   </main>
 
   <footer>
-    <p>  Hamburgueria da Winx - Não nos responsabilizamos por efeitos colaterais</p>
+    <p>Hamburgueria da Winx - Não nos responsabilizamos por efeitos colaterais</p>
   </footer>
+
+  <script>
+    function fazerPedido(combo) {
+      // Guarda o combo escolhido
+      localStorage.setItem("comboEscolhido", combo);
+      // Redireciona para a página de pedido
+      window.location.href = "fazerpedido.html";
+    }
+  </script>
 </body>
 </html>

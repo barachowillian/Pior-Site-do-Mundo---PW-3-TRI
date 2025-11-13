@@ -66,6 +66,18 @@ setInterval(() => {
   document.body.style.filter = `hue-rotate(${Math.random() * 360}deg)`;
 }, 1500);
 
+// Recupera o combo escolhido da outra página
+const comboSalvo = localStorage.getItem("comboEscolhido");
+if (comboSalvo) {
+  const comboSelect = document.getElementById("combo");
+  for (let i = 0; i < comboSelect.options.length; i++) {
+    if (comboSelect.options[i].text === comboSalvo) {
+      comboSelect.selectedIndex = i;
+      break;
+    }
+  }
+}
+
 document.getElementById('fazerPedido').addEventListener('click', () => {
   const nome = document.getElementById('nome').value;
   const combo = document.getElementById('combo').value;
