@@ -46,7 +46,7 @@ O site deve:
 ## Autor  
 **Willian Almeida (Will)**  
 Disciplina: Web Design & Programação Web
-Instituição: [inserir nome da escola ou curso, se desejar]  
+Instituição: [Marista Escola Social Irmão Ácacio]  
 Cidade: Londrina - PR  
 
 ---
