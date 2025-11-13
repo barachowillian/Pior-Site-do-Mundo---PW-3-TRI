@@ -13,6 +13,7 @@ O tema escolhido foi inspirado no universo das fadas Winx, utilizando cores vibr
 O site é composto pelos seguintes arquivos:
 
 - **index.html** — Página inicial com o título principal, imagem de fundo e botões de navegação.  
+![Código do Index:](img/Indeximagem.png)
 - **combo.html** — Página onde mostra a descrição do lanche de forma detalhada.
 - **main.css** — Arquivo de estilização com cores fortes, fontes grandes e elementos propositalmente desorganizados.  
 - **main.js** — Arquivo JavaScript responsável pelas interações e mensagens de alerta.
