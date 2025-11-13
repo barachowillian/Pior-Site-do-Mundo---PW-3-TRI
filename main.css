@@ -124,3 +124,45 @@ footer {
   color: lime;
   text-decoration: underline;
 }
+
+body {
+  background: linear-gradient(90deg, pink, yellow, lightblue);
+  font-family: "Comic Sans MS", cursive;
+  text-align: center;
+  color: purple;
+  animation: pisca 1s infinite;
+}
+
+@keyframes pisca {
+  0% { background-color: pink; }
+  50% { background-color: lightblue; }
+  100% { background-color: pink; }
+}
+
+h1 {
+  font-size: 50px;
+  text-shadow: 2px 2px white;
+}
+
+input, select, button {
+  margin: 10px;
+  padding: 10px;
+  border: 5px dotted purple;
+  background-color: yellow;
+  color: blue;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+button:hover {
+  transform: rotate(10deg) scale(1.3);
+  background-color: hotpink;
+}
+
+#resumo {
+  margin-top: 30px;
+  background-color: white;
+  border: 3px solid purple;
+  padding: 20px;
+  font-size: 18px;
+}

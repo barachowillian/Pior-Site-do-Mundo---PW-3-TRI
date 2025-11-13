@@ -65,3 +65,26 @@ document.body.addEventListener("mousemove", (e) => {
 setInterval(() => {
   document.body.style.filter = `hue-rotate(${Math.random() * 360}deg)`;
 }, 1500);
+
+document.getElementById('fazerPedido').addEventListener('click', () => {
+  const nome = document.getElementById('nome').value;
+  const combo = document.getElementById('combo').value;
+  const bebida = document.getElementById('bebida').value;
+
+  if (!nome) {
+    alert('Digite seu nome antes de pedir!');
+    return;
+  }
+
+  const resumo = document.getElementById('resumo');
+  resumo.innerHTML = `
+    <p><strong>${nome}</strong>, seu pedido foi registrado!</p>
+    <p>Combo escolhido: <b>${combo}</b></p>
+    <p>Bebida: <b>${bebida}</b></p>
+    <p>Tempo de espera: ${Math.floor(Math.random() * 50) + 10} minutos (ou mais... depende da magia!)</p>
+  `;
+
+  
+  const cores = ['pink', 'cyan', 'orange', 'lightgreen', 'violet'];
+  document.body.style.backgroundColor = cores[Math.floor(Math.random() * cores.length)];
+});
