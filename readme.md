@@ -13,6 +13,7 @@ O tema escolhido foi inspirado no universo das fadas Winx, utilizando cores vibr
 O site é composto pelos seguintes arquivos:
 
 - **index.html** — Página inicial com o título principal, imagem de fundo e botões de navegação. <br>
+
 ![Imagem do Index:](img/Indeximagem.png) <br>
 
 O arquivo index.html é a página principal do site Hamburgueria da Winx.
@@ -65,6 +66,7 @@ Cada botão usa o atributo onclick com window.location.href para redirecionar o 
 Contém uma frase humorística: “Hamburgueria da Winx - Não nos responsabilizamos por efeitos colaterais.”
 
 - **combo.html** — Página onde mostra a descrição do lanche de forma detalhada.
+
 ![Imagem do Combo:](img/imgcombo.png) <br>
 
 O arquivo combo-bloom.html representa a página específica do Combo Bloom dentro do site Hamburgueria da Winx.
@@ -276,6 +278,7 @@ Ao passar o mouse, o texto muda para verde-limão e ganha sublinhado;
 Reforça a interatividade visual, mantendo o toque colorido e exagerado.
 
 - **main.js** — Arquivo JavaScript responsável pelas interações e mensagens de alerta.
+
 ![Imagem main.js:](img/mainjs1.png) 
 
 Script principal **(main.js)**
@@ -344,6 +347,13 @@ O site deve:
 - Seguir um tema definido, neste caso, o universo Winx.  
 
 ---
+
+## Resultado Final da Atividade 
+
+![Resultado Final](img/Final%201.png) 
+
+
+![Resultado Final](img/Final2.png) 
 
 ## Autor  
 **Willian Almeida (Will)**  
