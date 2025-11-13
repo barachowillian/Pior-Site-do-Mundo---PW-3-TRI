@@ -191,7 +191,7 @@ Cursor muda para mãozinha ao passar o mouse (cursor: pointer);
 
 Efeito de rotação de 5 graus para dar aparência torta e divertida.
 
-🔹 **button:hover**
+🔹 **button: hover**
 
 Quando o usuário passa o mouse sobre o botão:
 
