@@ -96,8 +96,8 @@ footer {
 
 .botao-voltar2 {
   position: absolute;
-  bottom: 40px;
-  left: 50%;
+  bottom: 10px;
+  left: 1%;
   transform: translateX(-50%) rotate(5deg);
 }
 
@@ -109,7 +109,7 @@ footer {
 
 .botao-voltar4 {
   position: absolute;
-  bottom: 100px;
+  bottom: 10px;
   right: 120px;
 }
 
